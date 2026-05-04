@@ -2,6 +2,7 @@ version: '3.3'
 services:
   redbot:
     container_name: 'redbot'
+    user: root
     image: 'guidone/redbot'
     ports:
       - '1880:1880'
