@@ -4,7 +4,7 @@ WORKDIR /tmp
 
 COPY package.json /tmp/
 
-RUN npm install --also=dev
+RUN npm install --also=dev --legacy-peer-deps
 
 COPY bin /tmp/bin
 COPY lib /tmp/lib
